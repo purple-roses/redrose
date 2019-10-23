@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+        }
+        html body{
+            background: #cccccc;
+            font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        }
+        ul{
+            list-style: none;
+            color: #3c3c3c;
+        }
+        a{
+            /* display: block; */
+            font-style: none;
+            text-decoration: none;
+            /* display: block; */
+            list-style: none;
+        }
+    nav{
+        margin: 10rem auto;
+        width: 70%;
+        /* border: 1px solid black; */
+    }
+    nav .menu{
+        height: 4rem;
+        color: white;
+    }
+    .menu li{
+        min-width: 14rem;
+        background: linear-gradient(#3d3d3d,rgb(226, 224, 224));
+    }
+    .menu>li{
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+    .menu>li:first-child{
+        border-radius: .5rem 0 0 0;
+    }
+    .menu a{
+        display: block;
+        color:black ;
+        padding: 0 2.5rem;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        border-left: .3rem solid rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+    }
+    .menu li:hover{
+        background: linear-gradient(#111,#424242);
+    }
+    .menu li:hover>a{
+        color: white;
+        border-left: .3rem solid #fff;
+    }
+    .menu li .submmenu{
+        /* display: none; */
+        max-height: 0px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 0;
+        perspective: 400px;
+    }
+    .submmenu li{
+        opacity: 0;
+        transform: rotate3d(0,1,0,90deg);
+        transition: opacity 0.4s, transform 0.5s;
+    }
+    .menu li:hover .submmenu{
+        max-block-size: 1000px;
+        z-index: 9;
+    }
+    .menu li:hover>.submmenu li{
+        opacity: 1;
+        transform: rotate3d(0,0,0,0deg);
+    }
+    .submmenu li:nth-child(1){
+        transition-delay: 0ms;
+    }
+    .submmenu li:nth-child(2){
+        transition-delay: 100ms;
+    }
+    .submmenu li:nth-child(3){
+        transition-delay: 200ms;
+    }
+    .submmenu li:nth-child(4){
+        transition-delay: 300ms;
+    }
+
+    .submmenu li:nth-child(5){
+        transition-delay: 40 0ms;
+    }
+    /* nav ul>li{
+        float: left;
+    
+    } */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">home</a></li>
+            <li class="clearfix">
+                <a href="">first</a>
+                 <ul class="submmenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">five</a></li>
+                </ul>
+            </li>
+            <li><a href="">second</a></li>
+            <li>
+                <a href="">third</a>
+                <ul class="submmenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">five</a></li>
+                </ul>
+            </li>
+            <li><a href="">fourth</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

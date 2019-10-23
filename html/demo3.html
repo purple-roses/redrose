@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ccs1/iconfont.css">
+    <link rel="stylesheet" href="../ccs1/demo.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #cccccc;
+}
+a,ul{
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    margin: 0 auto;
+    width: 119rem;
+    /* border: 1px solid black; */
+}
+nav .menu{
+    /* max-height: 4rem; */
+    /* border: 1px solid red; */
+    display: flex;
+}
+nav .menu li{
+    min-width: 14rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(rgb(136, 136, 136),#ffffff);
+    }
+
+
+nav .menu>li{
+   flex-direction: row;
+   /* justify-content: space-around; */
+
+}
+nav .menu>li :hover{
+    color: white;
+    background: black;
+    border-left: 1px solid white;
+}
+nav .menu li:first-child{
+    border-radius: .5rem 0 0 0;
+   
+}
+nav .menu>li .submenu{
+    opacity: 0;
+}
+nav .menu>li:hover .submenu {
+    opacity: 1;
+    /* transform: rotateY(75deg); */
+    
+}
+/* nav .menu>li:hover .submenu li{
+    transform-origin: 50% 50%;
+    perspective: 60rem;
+    -webkit-box-flex: 1.0;
+} */
+nav .menu>li .submenu li:hover a{
+    color: yellow;
+    background: linear-gradient(red,blue);
+}
+nav .menu li a{
+    display: block;
+}
+
+</style>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">home
+                <span class="iconfont" >&#xe641;</span>
+            </a>
+               
+            </li>
+            <li><a href="">first</a>
+                <ul class="submenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">five</a></li>
+                </ul>
+            </li>
+            <li><a href="">seond</a></li>
+            <li><a href="">third</a></li>
+            <li><a href="">fourth</a>
+                <ul class="submenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">five</a></li>
+                </ul>
+            </li>
+            <li><a href="">fifth</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

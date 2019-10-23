@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-style: none;
+        }
+        html{
+            font-size: 10px;
+        }
+        html body{
+            background: #cccccc;
+        }
+
+        nav{
+            width: 70%;
+            margin:5rem auto;
+            border: 1px solid black;
+        }
+        nav .menu{
+           height: 4rem;
+        }
+        nav .menu li{
+            min-width: 14rem;
+            background: linear-gradient(#3d3d3d,#ccc);
+            text-align: center;
+        }
+        nav .menu li a{
+            display: block;
+            color: #ccc;
+            font-size: 1.8rem;
+            line-height: 3.6rem;
+            padding: 0 0.8rem;
+            font-style: none;
+            text-decoration: none;
+        }
+        nav .menu>li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">home</a></li>
+            <li><a href="">first</a>
+                <ul class="submenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">dive</a></li>
+                </ul>
+            </li>
+            <li><a href="">second</a></li>
+            <li><a href="">third</a></li>
+            <li><a href="">fourth</a>
+                <ul class="submenu">
+                    <li><a href="">one</a></li>
+                    <li><a href="">two</a></li>
+                    <li><a href="">three</a></li>
+                    <li><a href="">four</a></li>
+                    <li><a href="">dive</a></li>
+                </ul>
+            </li>
+            <li><a href="">fifth</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
